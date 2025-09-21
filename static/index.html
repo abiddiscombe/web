@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>abiddiscombe (Archie Biddiscombe)</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+  </head>
+
+  <body>
+    <a
+      href="https://github.com/abiddiscombe"
+      target="_blank"
+      aria-label="GitHub (Opens in a New Tab)"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-compass-icon lucide-compass"
+      >
+        <path
+          d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"
+        />
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="24" />
+      </svg>
+    </a>
+  </body>
+
+  <script>
+    const t = document.querySelector(".lucide-compass-icon");
+    const tBbox = t.getBoundingClientRect();
+    const tCenter = {
+      x: tBbox.left + tBbox.width / 2,
+      y: tBbox.top + tBbox.height / 2,
+    };
+
+    function handleInteraction(e) {
+      const angle =
+        Math.atan2(e.pageX - tCenter.x, -(e.pageY - tCenter.y)) *
+        (180 / Math.PI);
+      t.style.transform = `rotate(${angle - 45}deg)`;
+    }
+
+    document.addEventListener("mousemove", handleInteraction);
+    document.addEventListener("touchmove", handleInteraction);
+  </script>
+</html>

@@ -1,0 +1,57 @@
+:root {
+  --col-bg: oklch(98.5% 0 0);
+  --col-fg-1: oklch(70.8% 0 0);
+  --col-fg-2: oklch(26.9% 0 0);
+
+  @media (prefers-color-scheme: dark) {
+    --col-bg: oklch(14.5% 0 0);
+    --col-fg-1: oklch(55.6% 0 0);
+    --col-fg-2: oklch(92.2% 0 0);
+  }
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+
+  overflow: scroll;
+  overscroll-behavior: contain;
+
+  display: grid;
+  place-items: center;
+
+  background-color: var(--col-bg);
+
+  & > a {
+    padding: 1em;
+    color: var(--col-fg-1);
+    font-size: small;
+    font-weight: 500;
+    text-decoration: none;
+
+    & > svg {
+      width: 3.6em;
+      height: 3.6em;
+      stroke-width: 1.4px;
+
+      & > path {
+        color: var(--col-fg-2);
+
+        transition-duration: 100ms;
+      }
+
+      & > circle {
+        color: var(--col-fg-1);
+      }
+    }
+  }
+
+  & a > svg:hover > path {
+    color: var(--col-bg);
+  }
+}
