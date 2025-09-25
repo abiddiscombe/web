@@ -1,12 +1,12 @@
 :root {
-  --col-bg: oklch(98.5% 0 0);
-  --col-fg-1: oklch(70.8% 0 0);
-  --col-fg-2: oklch(26.9% 0 0);
+  --col-bg: #fafafa;
+  --col-fg-1: #a1a1a1;
+  --col-fg-2: #262626;
 
   @media (prefers-color-scheme: dark) {
-    --col-bg: oklch(14.5% 0 0);
-    --col-fg-1: oklch(55.6% 0 0);
-    --col-fg-2: oklch(92.2% 0 0);
+    --col-bg: #0a0a0a;
+    --col-fg-1: #737373;
+    --col-fg-2: #e5e5e5;
   }
 }
 
