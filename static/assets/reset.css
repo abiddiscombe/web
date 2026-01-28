@@ -70,7 +70,19 @@ h6 {
 /** EXTRA **/
 
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica,
-    arial, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    Adwaita Sans,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    helvetica,
+    arial,
+    sans-serif;
 }
