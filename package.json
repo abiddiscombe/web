@@ -1,5 +1,5 @@
 {
-  "name": "abiddiscombe",
+  "name": "web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
     "lint": "eslint",
     "build": "next build",
     "format": "prettier . --write",
-    "docker:build": "docker build -t abiddiscombe:latest ."
+    "docker:build": "docker build -t local/web:latest ."
   },
   "dependencies": {
     "@fontsource-variable/ibm-plex-sans": "^5.2.8",
