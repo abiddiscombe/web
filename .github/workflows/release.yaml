@@ -6,7 +6,7 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-latest
-    environment: prd1
+    environment: prod1
     steps:
       - name: Login to AB Internal Registry
         uses: docker/login-action@v4
