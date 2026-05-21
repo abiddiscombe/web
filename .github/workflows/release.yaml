@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  docker:
+  job_release:
     runs-on: ubuntu-latest
     environment: prod1
     steps:
