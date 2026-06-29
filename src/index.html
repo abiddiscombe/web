@@ -9,12 +9,10 @@
     :root {
       --col-bg: #fafafa;
       --col-tx: #0c0c0c;
-      --col-tx-link: #1447e6;
 
       @media (prefers-color-scheme: dark) {
         --col-bg: #171717;
         --col-tx: #f5f5f5;
-        --col-tx-link: #00a6f4;
       }
     }
     body {
@@ -43,7 +41,7 @@
         margin: 0;
         padding: 0;
         display: block;
-        list-style-type: "→";
+        list-style-type: "→ ";
         list-style-position: inside;
 
         & li {
@@ -51,19 +49,19 @@
           padding: 0;
 
           & a {
-            color: var(--col-tx-link);
+            color: var(--col-tx);
             font-size: inherit;
-            text-underline-offset: 0.2rem;
+            text-underline-offset: 0.15rem;
             text-decoration-skip-ink: none;
           }
 
           & a:hover {
-            color: var(--col-tx-link);
+            color: var(--col-tx);
             text-decoration-thickness: 2px;
           }
 
           & a:visited {
-            color: var(--col-tx-link);
+            color: var(--col-tx);
           }
         }
       }
