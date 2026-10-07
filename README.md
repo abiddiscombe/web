@@ -1,5 +1,3 @@
 # web
 
-My personal website.
-
-( ...yes, it's just an HTML page )
+My personal site, built with Vite, React, and Tailwind CSS.
